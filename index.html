@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Service Hub - Home</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="JS/index.js"></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img class="navimg" src="img/fsslogo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="parts-diagrams.html">Parts Diagrams</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service-documents.html">Service Documents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="user-manuals.html">User Manuals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service-form.html">Service Form</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">Service Hub</h1>
+      <p class="lead">The central hub of all things service.</p>
+    </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+<!--Parts card -->
+      <div class="col-lg-3 col-md-6 mb-4"> 
+        <div class="card h-100">
+          <div class="hovercontainer">
+          <a href="parts-diagrams.html" class="nounderline">
+          <img class="card-img-top" src="img/parts.jpg" alt="">
+          <div class="overlay">
+           <div class="texthover">Parts Diagrams</div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Parts Diagrams</h4>
+          </div>
+        </a>
+        </div>
+        </div>
+      </div>
+
+<!--Service Docs card -->
+      <div class="col-lg-3 col-md-6 mb-4"> 
+        <div class="card h-100">
+          <div class="hovercontainer">
+          <a href="service-documents.html" class="nounderline">
+          <img class="card-img-top" src="img/servicedocs.jpg" alt="">
+          <div class="overlay">
+           <div class="texthover">Service Documents</div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Service Documents</h4>
+          </div>
+        </a>
+        </div>
+        </div>
+      </div>
+<!--User Manuals card -->
+      <div class="col-lg-3 col-md-6 mb-4"> 
+        <div class="card h-100">
+          <div class="hovercontainer">
+          <a href="user-manuals.html" class="nounderline" target="_blank">
+          <img class="card-img-top" src="img/userman.jpg" alt="">
+          <div class="overlay">
+           <div class="texthover">User Manuals</div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">User Manuals</h4>
+          </div>
+        </a>
+        </div>
+        </div>
+      </div>
+
+<!--FAQs card -->
+      <div class="col-lg-3 col-md-6 mb-4"> 
+        <div class="card h-100">
+          <div class="hovercontainer">
+          <a href="#" class="nounderline" target="_blank">
+          <img class="card-img-top" src="img/faqs.jpg" alt="">
+          <div class="overlay">
+           <div class="texthover">FAQs</div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">FAQs</h4>
+          </div>
+        </a>
+        </div>
+        </div>
+      </div>
+      
+
+
+    </div>
+    <!-- /.row -->
+	
+	<div class="jumbotron my-4">
+      <h1 class="display-3 escpad">Convert to Cubic Meters</h1>
+	  <hr class="my-4">
+	  
+	  <div class="row text-center">
+		<div class="col"> 
+		
+		
+		<div id="divInput">
+		<div class="form-row">
+<div class="col"><input class="form-control" id="l" placeholder="Length" onchange="cal_cbm();" onkeyup="cal_cbm();"></div> 
+<div class="col"><input class="form-control" id="w" placeholder="Width" onchange="cal_cbm();" onkeyup="cal_cbm();"></div>
+<div class="col"><input class="form-control" id="h" placeholder="Height" onchange="cal_cbm();" onkeyup="cal_cbm();"></div>
+<div class="col"><select class="custom-select" id="unit" onchange="cal_cbm();">
+<option value="cm">cm</option>
+<option value="mm">mm</option>
+</select></div>
+
+<div class="col input-group mb-3">
+<div class="input-group-prepend">
+    <span class="input-group-text">Cubic Meters</span>
+  </div>
+<input class="form-control" id="cbm" placeholder="Result" readonly=""></div>
+</div>
+</div>
+<div class="form-row"><a class="btn btn-dark" href="https://portal.panthergroup.co.uk/account/login" target="_blank" role="button">Book Collection</a></div>
+		
+		
+		
+		
+		
+		
+		
+		</div>
+		</div>
+	  
+	  
+	  
+	  </div>
+	
+	
+	
+	
+	
+	
+	<div class="jumbotron my-4">
+      <h1 class="display-3 escpad">Escalation Charts</h1>
+	  <hr class="my-4">
+	
+	<div class="row text-center">
+		<div class="col-md-6"> 
+		
+		<iframe width="461" height="283" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRZQiJcNe667xe9wQXSOrx6DWcBLLFMokFDRH2B4tJu5fR79B89weQ6uymqSBqE6hpjNwqThpH1KogM/pubchart?oid=2093199064&amp;format=interactive"></iframe>
+		
+		
+		</div>
+		
+		<div class="col-md-6"> 
+		
+		<iframe width="461" height="283" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRZQiJcNe667xe9wQXSOrx6DWcBLLFMokFDRH2B4tJu5fR79B89weQ6uymqSBqE6hpjNwqThpH1KogM/pubchart?oid=1489271647&amp;format=interactive"></iframe>
+	
+		</div>
+
+		
+		
+	</div>
+	</div>
+	
+
+
+  </div>
+  <!-- /.container -->
+  </br>
+  </br>
+ 
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <a class="m-0 text-center text-white" href="https://dev-leeham.com">Copyright &copy;Leeham Dev</a>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript">
+var ocbm=document.getElementById("cbm");
+var ol=document.getElementById("l");
+var ow=document.getElementById("w");
+var oh=document.getElementById("h");
+var ounit=document.getElementById("unit");
+
+function cvt2m(v){
+var unit=ounit.value;
+var re = new RegExp(/[1-9][0-9]*\/[1-9][0-9]*/);
+if(re.test(v)){v=Fraction2Decimal(v);}
+var r=0;
+  if (unit=='in'){r=v*0.0254;} 
+  else if (unit=='ft'){r=v*0.3048;}
+  else if (unit=='yd'){r=v*0.9144;}
+  else if (unit=='mm'){r=v*0.001;}
+  else if (unit=='cm'){r=v*0.01;}
+  else if (unit=='m'){r=v;}
+  return Math.round(r*1000)/1000;
+}
+
+function show_formula(){
+var unit=ounit.value;
+var divFormula=document.getElementById("divFormula"); 
+divFormula.style.padding='0px';
+divFormula.innerHTML='';
+if (unit=='m'){return;} 
+var sTmp='';s2='';
+var aft=[];
+if (ol.value!=''){
+  fl=cvt2m(ol.value);
+  sTmp=ol.value.replace("/","&frasl;")+' '+ unit+' = '+fl+' m';
+  aft.push(fl);
+}
+if (ow.value!=''){
+  fw=cvt2m(ow.value);
+  if(sTmp!=''){sTmp+=', ';};
+  sTmp+=ow.value.replace("/","&frasl;")+' '+ unit+' = '+fw+' m';
+  aft.push(fw);
+}
+if (oh.value!=''){
+  fh=cvt2m(oh.value);
+  if(sTmp!=''){sTmp+=', ';};
+  sTmp+=oh.value.replace("/","&frasl;")+' '+ unit+' = '+fh+' m';
+  aft.push(fh);
+}
+if (aft.length==2){
+s2=aft[0]+" * "+aft[1]+' = '+ (Math.round(aft[0]*aft[1]*10000000)/10000000) +' m&sup2;';
+} else if (aft.length==3){
+s2=aft[0]+" * "+aft[1]+" * " +aft[2]+' = '+ (Math.round(aft[0]*aft[1]*aft[2]*10000000)/10000000)+' m&sup3;';
+}
+
+divFormula.innerHTML=sTmp+'<br>'+s2;
+divFormula.style.padding='5px 0px 5px 10px';
+
+}
+
+function cal_cbm(){
+var l=ol.value.trim();
+var w=ow.value.trim();
+var h=oh.value.trim();
+var unit=ounit.value;
+var re = new RegExp(/[1-9][0-9]*\/[1-9][0-9]*/);
+if(re.test(l)){l=Fraction2Decimal(l);}
+if(re.test(w)){w=Fraction2Decimal(w);}
+if(re.test(h)){h=Fraction2Decimal(h);}
+
+if ((l=='')||(w=='')||(h=='')||isNaN(l)||isNaN(w)||isNaN(h)){
+  ocbm.value='';
+  show_formula();
+  document.getElementById("divMsg").innerHTML='';
+} else {
+  if (unit=='in'){l=l*2.54;w=w*2.54;h=h*2.54;precision=100;} 
+  else if (unit=='ft'){l=l*30.48;w=w*30.48;h=h*30.48;precision=10;}
+  else if (unit=='yd'){l=l*91.44;w=w*91.44;h=h*91.44;precision=10;}
+  else if (unit=='mm'){l=l*0.1;w=w*0.1;h=h*0.1;precision=1000;}
+  else if (unit=='cm'){precision=100;}
+  else if (unit=='m'){l=l*100;w=w*100;h=h*100;precision=10;}
+  cbm=Math.round(l*w*h/1000000*precision)/precision;
+  ocbm.value=cbm;
+  cft=Math.round(cbm*35.3146667*precision)/precision;
+  show_formula();
+  olv=ol.value.replace("/","&frasl;");
+  owv=ow.value.replace("/","&frasl;");
+  ohv=oh.value.replace("/","&frasl;");
+  
+  document.getElementById("divMsg").innerHTML= owv+' * '+owv+' * '+ohv+' '+unit+' = '+ cbm +' m&sup3; = '+cft+' ft&sup3;';
+}  
+drawcube();
+} 
+</script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
