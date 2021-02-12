@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Service Hub - User Manuals</title>
+ 
+<link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="JS/userman.js"></script>
+  <script src="https://kit.fontawesome.com/fca4e00a22.js" crossorigin="anonymous"></script>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet"> 
+</head>
+
+<body onload="read_value()">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img class="navimg" src="img/fsslogo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="parts-diagrams.html">Parts Diagrams</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service-documents.html">Service Documents</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="user-manuals.html">User Manuals<span class="sr-only">(current)</span></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">User Manuals</h1>
+        
+      
+      
+        
+        <div class="container mt-3">
+          <div class="row">
+            <!--Col 1-->
+            <div class="col-5 mb-3">
+              <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            </div>
+
+            <!-- Insert document -->
+            <!--Col 2-->
+            <div class="col-md-auto">
+                <div class="container-fluid" id="flayout"> 
+                 <div id="flip"><i type="button" id="togglerbtn" class="far fa-caret-square-down fa-2x"></i></div>
+                </div>
+            </div>
+            <div class ="col col-lg-2">
+              <div id="loader" class="spinner-border" role="status"><span class="sr-only">Loading...</span>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="row">
+            <div class="col-xl">
+            <div style="display: none;" id="panel">
+              <div class="box1"> 
+                <div class="container-fluid" id="flayout"> 
+                  <form class="form-horizontal">
+                    <fieldset>
+                      <div class="form-row">
+                        <!-- Manufacturers -->
+                          <div class="col">
+                            <label class="control-label" for="man">Manufacturer</label>
+                              <input type="text" class="form-control" id="man" placeholder="Manufacturer">
+                          </div>
+                        <!-- Product Codes -->
+                          <div class="col">
+                            <label class="control-label" for="pc">Product Code</label>
+                            <input type="text" class="form-control" id="pc" placeholder="Product Code">
+                          </div>
+                      </div>
+            
+                      <div class="form-row">
+                        <!-- Product Name -->
+                          <div class="col">
+                            <label class="control-label" for="pn">Product Name</label>
+                            <input type="text" class="form-control" id="pn" placeholder="Product Name">
+                          </div>
+
+                          <!-- Link -->
+                          <div class="col">
+                            <label class="control-label" for="pn">Link</label>
+                            <input type="text" class="form-control" id="ln" placeholder="Link">
+                          </div>
+                        </div>
+    
+                          <div class="btns mt-3">
+                            <button type="button" class="btn btn-primary" id="b1" onClick="insert_value()">Insert</button>
+                            <button type="button" class="btn btn-primary" onClick="delete_value()">Delete</button>
+                            <input class="btn btn-primary" type="reset" value="Reset">
+                          </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+
+
+        </div> 
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Page Features -->
+    <div class="row text-center">
+    <div class="container-fluid" id="showData">
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

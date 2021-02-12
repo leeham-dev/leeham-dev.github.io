@@ -1,0 +1,169 @@
+
+body {
+  padding-top: 56px;
+}
+
+.escpad {
+	margin-bottom: 30px;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #fff; 
+    opacity: 1;
+}
+
+.input-group-text {
+	background-color:#343a40;
+	color: #fff;
+}
+
+.btn-dark {
+	background-color:#343a40!important;
+	color: #fff!important;
+	margin-left: 6px;
+}
+
+.jumbotron {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.active>.nav-link {
+  color: #f9a94b!important;
+}
+
+.navimg {
+  width:40%;
+}
+.navbar-brand {
+  width:30%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #343a40 ;
+}
+
+.hovercontainer:hover .overlay {
+  opacity: 1;
+}
+
+.texthover {
+  color: #f9a94b;
+  font-size: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btntog {
+  color: #f9a94b;
+}
+
+.fa-caret-square-down:hover {
+  color: #f9a94b;
+}
+
+table {
+  text-align: left;
+}
+
+.fa-caret-square-up {
+  color: #f9a94b;
+}
+
+.fa-book {
+  color: #343a40!important;
+}
+
+.fa-book:hover {
+  color: #f9a94b!important;
+}
+
+.fa-file-pdf {
+  color: #343a40!important;
+}
+
+.fa-file-pdf:hover {
+  color: #f9a94b!important;
+}
+
+.btn-primary {
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.btn-primary:hover {
+  background-color:#f9a94b;
+  border-color: #343a40;
+}
+
+.btn-primary:active {
+  background-color:#f9a94b!important;
+  border-color: #343a40!important;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  background-color:#f9a94b!important;
+  border-color: #343a40!important;
+  border-color: #343a40;
+  box-shadow: none;
+} 
+
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color:#f9a94b!important;
+  border-color: #343a40!important;
+}
+
+.nounderline {
+  text-decoration: none !important;
+  color: black;
+}
+
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .7rem!important;
+    padding-left: .7rem!important;
+}
+
+.nav-link:hover {
+  color: #f9a94b!important;
+}
+
+.nav-link {
+  color: #fff!important;
+}
+
+a {
+  color: black!important;
+}
+
+thead {
+  background-color: #e9ecef;
+}
+
+.display-3 {
+  font-size: 2.5rem!important;
+}
+
+#flayout {
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
